@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Define the structure "books"
+
 struct Books {
     char title[100];
     char author[100];
@@ -9,10 +9,10 @@ struct Books {
 };
 
 int main() {
-    struct Books library[5]; // Declare an array of structures to store details of 5 books
+    struct Books library[5]; 
     int i;
 
-    // Input: Read details of 5 books from the user
+    
     printf("Enter details of 5 books:\n");
     for (i = 0; i < 5; i++) {
         printf("Book %d\n", i + 1);
@@ -26,7 +26,7 @@ int main() {
         scanf("%d", &library[i].book_id);
     }
 
-    // Output: Display the details of the books entered by the user
+    
     printf("\nDetails of the books entered by the user:\n");
     for (i = 0; i < 5; i++) {
         printf("Book %d\n", i + 1);
